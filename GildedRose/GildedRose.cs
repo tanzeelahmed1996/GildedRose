@@ -9,7 +9,7 @@ public class GildedRose(IList<Item> items)
     private const string BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
     private const string SULFURAS = "Sulfuras, Hand of Ragnaros";
     private const string CONJURED = "Conjured Mana Cake";
-    readonly IList<Item> _items = items;
+    private readonly IList<Item> _items = items;
 
     public void UpdateQuality()
     {
@@ -18,7 +18,6 @@ public class GildedRose(IList<Item> items)
             IItemUpdater updater = GetUpdater(item);
             updater.Update(item);
         }
-
     }
 
     private IItemUpdater GetUpdater(Item item)

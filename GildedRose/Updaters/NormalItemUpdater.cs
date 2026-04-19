@@ -12,7 +12,6 @@ public class NormalItemUpdater : IItemUpdater
         item.SellIn--;
         int degradeBy = item.SellIn < 0 ? 2 : 1;
 
-        // Calculate new quality
         if (item.Quality > 0)
         {
             item.Quality = item.Quality - degradeBy;
