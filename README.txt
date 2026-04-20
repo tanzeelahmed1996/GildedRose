@@ -14,4 +14,4 @@ My preference would have been to have a new property "TypeOfItem" in the Item cl
 After the refactoring was completed, I moved the tests around and used paramaterised tests to decrease duplication.
 
 If I had a bit more time I would have used an abstract class instead of an interface, as this would help with removing 
-duplication of some of the logic. Would have also liked to use a factory class to further seperate concerns.
+duplication of some of the logic when checking the upper and lower limits of quality. I would have also liked to use a factory class to further seperate concerns.
